@@ -73,7 +73,7 @@
     padding-right: 20px;
     background-color: #ffffff;
     width: 750px;
-    height: 72px;
+    height: 84px;
     flex-direction: row;
   }
 
@@ -83,17 +83,17 @@
 
   .search-bar-input {
     position: absolute;
-    top: 4px;
+    top: 6px;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 40px;
     padding-left: 60px;
     font-size: 26px;
     width: 624px;
-    height: 64px;
+    height: 72px;
     line-height: 64px;
     background-color: #EEEEEE;
-    border-radius: 32px;
+    border-radius: 36px;
   }
 
   .search-bar-input-yellow {
@@ -105,7 +105,7 @@
     width: 30px;
     height: 30px;
     left: 40px;
-    top: 21px;
+    top: 28px;
   }
 
   .search-bar-close {
@@ -113,7 +113,7 @@
     width: 30px;
     height: 30px;
     right: 120px;
-    top: 21px;
+    top: 28px;
   }
 
   .search-bar-button {
@@ -148,7 +148,7 @@
     flex-direction: row;
     position: absolute;
     left: 24px;
-    top: 15px;
+    top: 22px;
     border-right-style: solid;
     border-right-width: 1px;
     border-right-color: #C7C7C7;
