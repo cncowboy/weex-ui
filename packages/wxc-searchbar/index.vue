@@ -92,7 +92,7 @@
     width: 624px;
     height: 64px;
     line-height: 64px;
-    background-color: #E5E5E5;
+    background-color: #EEEEEE;
     border-radius: 6px;
   }
 
@@ -247,7 +247,7 @@
     },
     computed: {
       needShowCancel() {
-        return this.alwaysShowCancel || this.showCancel;
+        return this.cancelLabel && this.cancelLabel !== '' && (this.alwaysShowCancel || this.showCancel);
       },
       buttonStyle() {
         const { barStyle } = this;
