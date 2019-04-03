@@ -30,7 +30,7 @@
              v-if="showClose"
              :aria-hidden="true"
              @click="closeClicked"
-             :src="closeIcon"></image>
+             :src="closeIcon" :style="closeIconStyle"></image>
       <text :class="['search-bar-button','search-bar-button-'+theme]"
             :style="buttonStyle"
             v-if="needShowCancel"
@@ -73,7 +73,7 @@
     padding-right: 20px;
     background-color: #ffffff;
     width: 750px;
-    height: 84px;
+    height: 72px;
     flex-direction: row;
   }
 
@@ -83,7 +83,7 @@
 
   .search-bar-input {
     position: absolute;
-    top: 10px;
+    top: 4px;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 40px;
@@ -93,7 +93,7 @@
     height: 64px;
     line-height: 64px;
     background-color: #EEEEEE;
-    border-radius: 6px;
+    border-radius: 32px;
   }
 
   .search-bar-input-yellow {
@@ -104,8 +104,8 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    left: 34px;
-    top: 28px;
+    left: 40px;
+    top: 21px;
   }
 
   .search-bar-close {
@@ -113,7 +113,7 @@
     width: 30px;
     height: 30px;
     right: 120px;
-    top: 28px;
+    top: 21px;
   }
 
   .search-bar-button {
@@ -148,7 +148,7 @@
     flex-direction: row;
     position: absolute;
     left: 24px;
-    top: 22px;
+    top: 15px;
     border-right-style: solid;
     border-right-width: 1px;
     border-right-color: #C7C7C7;
@@ -235,6 +235,10 @@
       placeholder: {
         type: String,
         default: '搜索'
+      },
+      closeIconStyle: {
+        type: Object,
+        default: () => ({})
       },
       cancelLabel: {
         type: String,
