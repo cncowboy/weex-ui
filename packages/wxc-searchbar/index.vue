@@ -117,19 +117,19 @@
   }
 
   .search-bar-button {
-    width: 94px;
-    height: 36px;
+    width: 86px;
+    height: 72px;
     font-size: 30px;
     text-align: center;
     background-color: #ffffff;
-    margin-top: 16px;
+    padding-top: 16px;
     margin-right: 0;
     color: #333333;
     position: absolute;
     right: 8px;
     top: 9px;
   }
-
+ 
   .search-bar-button-yellow {
     background-color: #FFC900;
   }
